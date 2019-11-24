@@ -16,17 +16,17 @@ There are a couple of things I would like to do to tinker with base eleventy: a 
 So I was looking at the `tags-list.njk` bit of eleventy, which looks like this:
 
 ```
-		---
-		permalink: /tags/
-		layout: layouts/home.njk
-		---
-		<h1>Tags</h1>
+---
+permalink: /tags/
+layout: layouts/home.njk
+---
+<h1>Tags</h1>
 
-		{% for tag in collections.tagList %}
-  		{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  		<a href="{{ tagUrl | url }}" class="tag tags_page size{{ tagNum }}">
-			{{ tag }}</a>
-  	{% endfor %}
+{% for tag in collections.tagList %}
+	{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+	<a href="{{ tagUrl | url }}" class="tag tags_page size{{ tagNum }}">
+	{{ tag }}</a>
+{% endfor %}
 ```
 
 and makes the [tag list page](/tags/). And I thought to myself, "Hmm, if we knew how many posts were tagged with each tag, you could make the more popular tags bigger, like a tag cloud."
