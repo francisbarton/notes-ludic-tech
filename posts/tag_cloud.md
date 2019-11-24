@@ -16,6 +16,7 @@ There are a couple of things I would like to do to tinker with base eleventy: a 
 So I was looking at the `tags-list.njk` bit of eleventy, which looks like this:
 
 ```
+{%- raw -%}
 ---
 permalink: /tags/
 layout: layouts/home.njk
@@ -27,6 +28,7 @@ layout: layouts/home.njk
 	<a href="{{ tagUrl | url }}" class="tag tags_page size{{ tagNum }}">
 	{{ tag }}</a>
 {% endfor %}
+{%- endraw -%}
 ```
 
 and makes the [tag list page](/tags/). And I thought to myself, "Hmm, if we knew how many posts were tagged with each tag, you could make the more popular tags bigger, like a tag cloud."
