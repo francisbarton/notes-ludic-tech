@@ -5,8 +5,8 @@ tags:
   - nav
   - pages
 eleventyNavigation:
-	key: pinboard
-	order: 5
+  key: pinboard
+  order: 5
 date: 2019-10-04
 templateClass: tmpl-page
 ---
