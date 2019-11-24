@@ -166,6 +166,7 @@ main > :last-child {
 header {
   /* border-bottom: 2px dotted var(--ruby); */
   border-bottom: 4px solid var(--light_slate_grey);
+	padding-bottom: 1rem;
 }
 header:after {
   content: "";
@@ -249,7 +250,7 @@ pre {
 .home {
   padding: 0;
   float: left;
-  margin: 1rem; /* 16px /16 */
+  margin: 1rem 0 0 5vw; /* 16px /16 */
   font-size: 1.25em; /* 16px /16 */
   /* border-bottom: 2px dotted var(--ruby); */
 }
@@ -271,7 +272,7 @@ ul.nav {
   padding: 0;
   list-style: none;
   float: right;
-  margin: 2.6em 0 0 2em;
+  margin: 1rem 0 0 2rem;
 }
 .nav-item {
   display: inline-block;
