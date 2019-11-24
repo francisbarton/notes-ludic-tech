@@ -4,6 +4,9 @@ templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 
+<article>
 {{ content | safe }}
+</article>
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<p class="article-footer"><a href="{{ '/' | url }}">&#8662; home</a> |
+<a>other posts tagged </a></p>
